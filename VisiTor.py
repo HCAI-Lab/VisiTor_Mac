@@ -48,14 +48,16 @@ if __name__ == "__main__":
     elif args.Function == 'getMouseLocation':
         print(pyautogui.position())
     elif args.Function == 'whereis':
+        direc = args.Dir
         while args.arg2 == None:
             args.arg2 = input('Please enter the name of the file without extention')
-        action = args.arg2
+        action = args.arg2[0]
+        path = find_file(direc, f'{action}')
         address = None
         i = True
         while address == None:
             if i:
-                address = whereis(f'{action}.png')
+                address = whereis(path)
                 i = False
             else:
                 input('file does not exist. Please try again')

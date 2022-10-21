@@ -58,9 +58,11 @@ if __name__== "__main__":
                 else:
                     ans =input("do you want to save the data?[Y/N]")
                     if ans.lower()=='y':
-                        print('please choose where you want to save your stuff')
+                        # print('please choose where you want to save your stuff')
                         sleep(2)
-                        directory = addressfinder()
+                        # directory = addressfinder()
+                        directory = 'files'
+                        os.mkdir(directory)
                         movefiles('environment.png', directory)
                         for files in choices:
                             movefiles(f"{files}.png", directory)

@@ -15,16 +15,15 @@ import os  # For moving between folders and stuff
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import shutil  # Moving files
 import pickle  # Saving files
-# from PIL import Image
+from PIL import Image
 import tkinter  # For GUI i saving files
-# from PIL import ImageGrab
+from PIL import ImageGrab
 import pygame  # Gets mouse position and stuff
 from tkinter import filedialog  # GUI stuff
 from tkinter.messagebox import showinfo
 import glob  # finds specific types of files
 import tkinter as tk
 from tkinter import filedialog as fd
-from TemplateMatching import *
 import random
 from TemplateMatching import *
 
